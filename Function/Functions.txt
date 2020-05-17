@@ -1,0 +1,228 @@
+Function - Category
+---------------------
+Numerical/Maths Function 
+Aggregiate Function 
+String Function 
+Date Function 
+Type casting/Convert
+
+Conditional statement
+-------------------------
+
+
+Numeric
+-------------------------
+-------------------------
+-------------------------
+ABS(VAL)  - return absolute value ex: -67.99
+ceiling(val) 	- ex: 23.789  = 24
+		- ex: 23.321  = 23
+DIV(34,10)	- 3
+		ex: 34/10	= 3
+STDDEV()
+
+SQRT(9) 	= 3
+SQUARE(2)	= 4
+PI():
+	22/7
+PI()		= 3.14...
+
+POWER(2,3)	= 8
+ROUND(183.22)	= 183
+ROUND(183.22,1 DECIMAL POS.)	= 183.2
+
+Aggregiate Function
+-----------------------
+MAX(COLUMN)
+MAX(COLUMN1, COLUMN2)	
+
+MIN(COLUMN)
+MIN(COLUMN1,COLUMN2)
+
+AVERAGE()/MEAN()  
+SUM()
+COUNT()
+
+
+CASE STATEMENT: CONDITIONAL STATEMENT 
+---------------
+CASE POWER(2,3)
+	WHEN 11 
+		THEN 2222
+	WHEN 8 
+		THEN 4555
+	WHEN 16 
+		THEN 876
+	ELSE 
+		3455
+END
+
+
+Text/CHAR/ALPHA NUMERIC
+----------
+fname + lname 		- correct
+fname + age +lname	- incorrect
+
+CHAR()
+-------
+fname + CHAR(age) +lname+","	- correct - type conversion 
+
+ISFULLNAME("raman ") - false
+FNAME+LNAME
+ABC  " " 
+ISFULLNAME("ABC XYZ")  - TRUE
+
+CONTAINS()
+---------
+IF CONTAINS(NAME,"A")	-- A SHOULD BE AVAILABLE ANYWHERE IN NAME COLUMN
+THEN 
+	
+ELSE
+
+END
+
+
+ENDSWITH()
+----
+IF ENDSWITH(NAME,"N") -- ending with N 
+THEN
+	..
+ELSE
+	..
+END
+
+IF STARTSWITH(NAME,"R") -- START WITH R 
+THEN
+	..
+ELSE
+	..
+END
+
+
+FIND()
+
+----------
+EX:  RAMAN SINHA
+
+FIND(NAME,"A") = 2 
+FIND(NAME,"A",5) = 7
+
+
+FINDWITH()- RETURN THE POSITION OF given times of any char
+--
+EX:  RAMAN SINHA
+FINDWITH(NAME,"A",2)	= 5
+
+
+LEFT()
+---
+LEFT(NAME,3)	= RAM
+
+RIGHT(NAME,2)	= HA
+
+
+LEN(NAME)	= 11 
+
+
+LOWER(NAME)	= raman sinha
+
+UPPER(NAME)	= RAMAN SINHA
+
+LTRIM(" ABCD ") = "ABCD "		--REMOVE EXTERA SPACE FROM LEFT 
+
+
+MAX(NAME)	--ALPHA MAX VALUE
+MAX(COL1,COL2)
+
+MID("RAMAN SINHA",3)  = MAN SINHA--CUT DATA FROM GIVEN INDEX
+
+MID("RAMAN SINHA",3,5)  = MAN S --FROM GIVEN POSITION TO NO. OF CHARS
+
+REPLACE(NAME,"A","Z")	= RZMZN SINHZ
+
+RTRIM()	-- REMOVE SPACE FROM RIGHT 
+
+TRIM()		- REMOVE LEADING SPACE FROM LEFT ,RIGHT, AND CENTER
+
+
+DateTime
+----------
+
+Other/Conversion
+-----------------
+IF ISDATE(SALES_ORDER_DATE) 		-- IS DATE IS EXIST OR NOT - null, type
+THEN
+	DATE(SALES_ORDER_DATE)
+ELSE
+	DATE("01/05/2017")			--CONVERSION TO DATE
+END
+
+
+
+There are following keywords to get part of date:
+
+"year"
+"month"
+"day"
+"hour"
+"minute"
+"sec"
+
+
+
+DATEPART("year",SALES_DATE)	= 2017
+
+DATEADD("month",3,SALES_DATE) 
+
+DATEDIFF("year",FROM,TO)
+
+DATENAME("month",ord_date)	
+EX:  ord_date = "2017-03-01"  = MARCH
+
+
+DATENAME("MMMM",ord_date)	
+EX:  ord_date = "2017-08-01"  = AUGEST
+
+DATENAME("MMM",ord_date)	
+EX:  ord_date = "2017-08-01"  = Aug
+
+
+DATENAME("MM",ord_date)	
+EX:  ord_date = "2017-08-01"  = 08
+
+
+USERNAME() - RETURN CURRENT USER NAME / LOGDIN NAME
+
+
+
+----------------------------EXANPLE / QUESTIONS ----------
+empid  fname  lname    dob    gender  country   salary 
+1     raman   sinha    2-jan-2017 m    india    400000
+
+
+output
+empid   fullname  dob   age   hbady   gender 	country		salary   pwd
+					male 				lname first 2 char + fname last 2 char + mm + country first char
+
+
+-------------------
+
+15lakh  = high
+10-15 - mid
+<5  - starter
+else - other 
+
+
+----------- INCOME TAX ----------------
+0-250000 = 0 
+250001-500000 = 5% 
+500001-1000000 = 20% 
+1000001>=  30%
+
+
+--------------- SHOW AGE  ---------------
+
+
+
+
+ 
